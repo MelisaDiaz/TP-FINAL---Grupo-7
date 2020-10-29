@@ -1,4 +1,8 @@
+/*
+Tecno Multimedia 1: TP Final - Aventura gráfica y juego con objetos
+Comisión 2 - Grupo 7 - Jorgelina Reynoso y Melisa Díaz
 
+*/
 Aventura aventura;
 
 void setup(){

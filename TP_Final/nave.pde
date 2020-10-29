@@ -3,7 +3,7 @@ class Nave {
   int posx1, posy1, tam1;  
   int posx2, posy2, tamX2, tamY2;
 
-  Imagen imagen;
+  Pantallas pantalla;
 
   Nave() {
     posx1 = 100;
@@ -14,11 +14,11 @@ class Nave {
     posy2 = 250;
     tamX2 = 250;
     tamY2 = 250;
-    imagen = new Imagen();
+    pantalla = new Pantallas();
   }
 
   void dibujarNave1() {
-    imagen.dibujarImg (imagen.fotos[8], posx1, posy1, tam1, tam1 ); //nave1 (diagonal)
+    image(pantalla.fotos[8], posx1, posy1, tam1, tam1 ); //nave1 (diagonal)
   }
 
   void despegar1() {
@@ -26,7 +26,19 @@ class Nave {
     posy1 -= 8;
     tam1 = tam1 + 3;
   }
+  
+  
+  void dibujarNave2() {
 
+    image(pantalla.fotos[13], posx2, posy2, tamX2, tamY2 );//nave2 (horizontal)
+  }
+  void despegar2() {
+    posx2 = posx2 + 4;
+    tamX2 -= 1;
+    tamY2 -= 1;
+  }
+  
+  
   void reiniciarNave() {
     posx1 = 100; 
     posy1 = 600; 
@@ -35,15 +47,5 @@ class Nave {
     posy2 = 250;
     tamX2 = 250;
     tamY2 = 250;
-  }
-
-  void dibujarNave2() {
-
-    imagen.dibujarImg ( imagen.fotos[13], posx2, posy2, tamX2, tamY2 );//nave2 (horizontal)
-  }
-  void despegar2() {
-    posx2 = posx2 + 4;
-    tamX2 -= 1;
-    tamY2 -= 1;
   }
 }
