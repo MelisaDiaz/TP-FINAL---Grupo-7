@@ -11,3 +11,13 @@ void draw(){
   aventura.dibujarAventura();
   
 }
+
+void keyPressed(){
+ aventura.teclas(); 
+ 
+}
+
+void mousePressed(){
+ aventura.clicMouse(); 
+  
+}
