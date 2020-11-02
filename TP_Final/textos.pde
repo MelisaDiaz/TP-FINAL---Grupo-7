@@ -20,7 +20,7 @@ class Textos {
     texto [10] = "Después de varios días de\nrecorrido hemos llegado!\nHaz click en el planeta Jupiter\npara aterrizar";
     texto [11] = "Lo hemos lograddd...eh? \nespera, que es eso verde?\nParece que no estamos solos\nApreta C para ir a hablarles";
     texto [12] = "Hola! vengo en son de paa...\nAAAAAAAHHHHHHH";
-    texto [13] = "FIN \n \n \n \n Realizado por Jorgelina Reynoso y Melisa Díaz \n Universidad Nacional de La Plata \n Facultad de Artes \n Diseño Multimedial \n Trabajo Práctico Final \n Comisión 2 \n Profesor Matías Jauregui Lorda";
+    texto [13] = "FIN \n \n \n \n Realizado por Jorgelina Reynoso y Melisa Díaz \n\n\n Universidad Nacional de La Plata \n Facultad de Artes \n\n\n Diseño Multimedial \n Trabajo Práctico Final \n\n\n Comisión 2 \n Profesor Matías Jauregui Lorda";
 
     Titulo = loadFont ( "AgencyFB-Bold-48.vlw" );
     Dialogo = loadFont ( "ArialUnicodeMS-48.vlw" );
