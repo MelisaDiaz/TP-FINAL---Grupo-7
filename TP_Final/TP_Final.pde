@@ -10,10 +10,11 @@ SoundFile musicaDeFondo;
 
 void setup() {
   size (800, 600);
+  surface.setResizable(true);
   aventura = new Aventura();
 
   musicaDeFondo = new SoundFile(this, "aventura.wav"); //cargo el archivo de audio
-  //musicaDeFondo.loop();
+  musicaDeFondo.loop();
 }
 
 void draw() {
