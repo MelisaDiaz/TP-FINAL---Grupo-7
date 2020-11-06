@@ -60,13 +60,13 @@ class Aventura {
     //------------------------------- CREDITOS      
     } else if ( estado.equals("creditos") ) {
       pantalla.creditos();
+      juego.reiniciarTodo();
       
     //------------------------------- Jugar      
     } else if ( estado.equals("juego")) {
       juego.jugar();
-    }
-    
-    
+      juego.empezar();
+    }   
   }
 
 
@@ -80,6 +80,7 @@ class Aventura {
       estado = "inicio";
       nave.reiniciarNave();
       pantalla.resetCreditos();
+      musicaDeFondo.loop();
     }
 
     //CAMBIO de ESTADO: "DESPEGUE" -> "SISTEMA SOLAR"
@@ -107,11 +108,6 @@ class Aventura {
 
     if (key == BACKSPACE && estado.equals( "conocerextraterrestres")) {
       estado = "creditos";
-    }
-    
-    if(juego.estado == 2 || juego.estado == 3 && key == BACKSPACE ){
-      juego.reiniciarTodo();
-      estado = "créditos";
     }
   }
 
