@@ -89,21 +89,15 @@ class Juego {
   void perdiste() {
     if (estado == 2) { 
       pantalla.naveRota();
+      if (keyCode== BACKSPACE)aventura.estado = "creditos";
+      } 
+   } 
 
-      //if (keyCode == BACKSPACE) {
-
-      //  //reiniciarTodo();
-      //}
-    }
-  }
-
-  void ganaste() {
+    
+   void ganaste() {
     if (estado == 3) {
       pantalla.nuevoPlaneta();
-      //if (keyCode == BACKSPACE) {
-
-      //  reiniciarTodo();
-      //}
+      if (keyCode== BACKSPACE)aventura.estado = "creditos";
     }
   }
 
