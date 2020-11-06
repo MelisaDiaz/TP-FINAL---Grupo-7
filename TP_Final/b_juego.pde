@@ -8,7 +8,6 @@ class Juego {
   PImage explosion;
 
   Pantallas pantalla;
-  //Aventura aventura;
   Textos textos;
   Naveextraterrestre extraterrestre;
   NaveJugador jugador;
@@ -23,7 +22,6 @@ class Juego {
     }
     textos = new Textos();
     pantalla = new Pantallas();
-    //aventura = new Aventura();
   }    
 
   void jugar() {

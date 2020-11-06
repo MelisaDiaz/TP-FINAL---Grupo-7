@@ -75,7 +75,7 @@ class Aventura {
   void teclas() {
     juego.teclas();
     
-    //CAMBIO de ESTADO: "INICIO" -> "DESPEGUE"    
+    //CAMBIO de ESTADO: "CRÉDITOS" -> "INICIO"    
     if ( key == ENTER && estado.equals("creditos")) {
       estado = "inicio";
       nave.reiniciarNave();
@@ -87,19 +87,6 @@ class Aventura {
     if ( key == ' ' && estado.equals("despegue" ) ) {
       estado = "sistema solar";
     }  
-
-
-    /*
-  if ( key == 'a' && estado.equals( "Marte")) {
-     //CAMBIO de ESTADO: "LLUVIA DE METEORITOS" -> "SEGUIR VIAJE A MARTE"
-     estado = "naverota";
-     }
-     
-     if ( key == 'b'&& estado.equals("Marte" ) ) {
-     //CAMBIO de ESTADO: "LLUVIA DE METEORITOS" -> "DESVIARNOS"
-     estado = "nuevoplaneta";
-     }
-     */
 
     //CAMBIO de ESTADO: "ATERRIZAR" -> "HABLAR A LOS EXTRATERRESTRES"
     if ( key == 'c' && estado.equals( "aterrizar" )) {
