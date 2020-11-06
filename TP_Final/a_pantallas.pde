@@ -32,7 +32,7 @@ class Pantallas {
     image (fotos[7], 0, height, width*0.48, height*0.64 ); //planeta Tierra
     image (fotos[9], ((width*9)/16), (height*5)/6, width/8, height/6 ); //astronauta
     textos.globodialogo((width*0.67875), (height*0.6), (width*0.325), #E6E62D);
-    textos.dibujarTextos(3, (width*0.57), (height*0.54), textos.Dialogo, (width*0.01875), 0);
+    textos.dibujarTextos(3, (width*0.57), (height*0.53), textos.Dialogo, (width*0.01875), 0);
   }
 
   void sistemaSolar() {
