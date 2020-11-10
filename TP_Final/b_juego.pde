@@ -87,7 +87,7 @@ class Juego {
   void perdiste() {
     if (estado == 2) { 
       pantalla.naveRota();
-      if (keyCode== BACKSPACE)aventura.estado = "creditos";
+      if (keyCode== BACKSPACE)aventura.cambiarEstado ( "creditos");
       } 
    } 
 
@@ -95,7 +95,7 @@ class Juego {
    void ganaste() {
     if (estado == 3) {
       pantalla.nuevoPlaneta();
-      if (keyCode== BACKSPACE)aventura.estado = "creditos";
+      if (keyCode== BACKSPACE)aventura.cambiarEstado ( "creditos");
     }
   }
 
