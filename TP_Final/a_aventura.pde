@@ -97,7 +97,11 @@ class Aventura {
       estado = "creditos";
     }
   }
-
+   
+   void cambiarEstado( String nuevoEstado ) {
+    estado = nuevoEstado;
+    }
+    
   void clicMouse() {
     if (mousePressed) { 
       //CUANDO: hago clic sobre el el boton de iniciar
